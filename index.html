@@ -75,9 +75,9 @@
     }
 
     function getEnvironment() {
-      document.getElementById("os").append(liff.getOS());
-      document.getElementById("acessToken").append(liff.getAccessToken());
-      document.getElementById("os").append(liff.isInClient());
+      document.getElementById("os").append(liff.getOS())
+      document.getElementById("acessToken").append(liff.getAccessToken())
+      document.getElementById("os").append(liff.isInClient())
       if(liff.isInClient()){ // ถ้าไม่เปิดในแอปไลน์ จะปิดหลายๆปุ่มออก
         document.getElementById("btnLogOut").style.display = "none"
       }else{
